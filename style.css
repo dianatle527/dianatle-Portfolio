@@ -1,0 +1,189 @@
+/* Basic CSS stylesheet */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+}
+
+body {
+    line-height: 1.6;
+}
+
+header {     
+    padding: 75px;
+    padding-left: 10px;
+
+}
+
+header > h1 {
+    font-family: 'Fascinate';
+    text-align: left;
+    font-size: 175px;
+    display: block;
+    padding: 75px 75px 0 75px;
+    margin: 0;
+    line-height: 1.25;
+}
+
+header > h2 {
+    display: block;
+    padding-left: 100px;
+    margin: 0;
+    font-family: 'Cal Sans';
+    letter-spacing: 2px;
+    font-size: 40px;
+    color: #5e5e64;
+}
+
+header a:link, header a:visited {
+    color: #000000;
+    text-decoration: none;
+}
+
+nav {
+    padding: 25px 100px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+    font-family: 'Cal Sans';
+    font-size: 35px;
+    background-color: #eeeeee;
+    padding: 20px;
+}
+
+nav a:link, nav a:visited {
+    color: #000000;
+    text-decoration: none;
+}
+
+main {
+    display: grid;
+    text-align: center;
+    align-items: start;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: 
+    "about about"
+    "about portrait"
+    "school skills"
+    "socials socials";
+    padding: 50px 150px 0 0;
+}
+
+.about {
+    text-align: left;
+    padding: 25px 0px 0px 200px;
+    letter-spacing: 3px;
+}
+
+.about > h2 {
+    font-family: 'Bungee';
+    font-size: 50px;
+    padding: 20px;
+}
+
+.about > h3 {
+    font-family: 'Fascinate';
+    font-size: 40px;
+    padding: 20px 20px 0;
+    color: rgb(99, 201, 99);
+}
+
+.about > p {
+    padding: 10px 20px;
+    font-family: 'Cal Sans';
+    color: #5e5e64;
+}
+
+img {
+  width: 500px;      
+  height: 500px;    
+  object-fit: cover; 
+  border-radius: 50%;
+}
+
+ul {
+    list-style-type: none;
+}
+
+.school {
+    text-align: left;
+    padding: 25px 0px 0px 200px;
+    letter-spacing: 3px;
+}
+
+.school > h3 {
+    font-family: 'Bungee';
+    font-size: 25px;
+    padding-left: 25px;
+}
+
+.school > ul {
+    padding: 25px 0 0 50px;
+    font-family: 'Cal Sans';
+    color: #5e5e64;
+}
+
+.skills {
+    text-align: left;
+    padding: 25px 0px 0px 200px;
+    letter-spacing: 3px;
+}
+
+.skills > h3 {
+    font-family: 'Bungee';
+    font-size: 25px;
+    padding-left: 25px;
+}
+
+.skills > ul {
+    padding: 25px 0 100px 50px;
+    font-family: 'Cal Sans';
+    color: #5e5e64;
+    line-height: 2;
+}
+
+.socials {
+    text-align: left;
+    padding: 25px 0px 0px 200px;
+    letter-spacing: 3px;
+}
+
+.socials > h3 {
+    font-family: 'Bungee';
+    font-size: 25px;
+}
+
+.socials > ul {
+    padding: 25px 0 0 25px;
+    font-family: 'Cal Sans';
+    color: #5e5e64;
+}
+
+.socials a:link, .socials a:visited {
+    color: #5e5e64;
+    text-decoration: none;
+    font-size: 25px;
+    line-height: 2;
+}
+
+footer { 
+    background-color: #bdbdbd;
+    text-align: center;
+    padding: 50px;
+    color: #3d3d3d;
+}
+
+footer a:link, footer a:visited {
+    color:#4d4957;
+    text-decoration: none;
+    font-family: 'Cal Sans';
+    display: block;
+    padding: 10px;
+}
