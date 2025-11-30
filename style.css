@@ -229,7 +229,7 @@ ul {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    margin: 150px 0px 200px 0px;
+    margin: 150px 0px 300px 0px;
     gap: 50px;
 }
 
@@ -242,7 +242,7 @@ ul {
 
 .phone {
     position: absolute;
-    transform: translateX(760px) translateY(-760px);
+    transform: translateX(760px) translateY(-860px);
     z-index: 1;
     height: 700px;
     filter: drop-shadow(#777777 5px 5px 10px);
@@ -254,7 +254,6 @@ ul {
     width: 1500px;
     columns: 3;
     column-gap: 20px;
-    rows: 2;
 }
 
 .posters .box{
@@ -264,6 +263,60 @@ ul {
 }
 
 .posters .box img {
+    max-width: 100%;
+    border-radius: 20px;
+}
+/* 3D Modeling Styles */
+
+#animate {
+    font-family: 'Slackey';
+    font-size: 100px;
+    padding: 20px;
+    margin: 100px 0px 25px 0px;
+    text-align: center;
+    color: #000000;
+    letter-spacing: 5px;
+}
+
+#model {
+    font-family: 'Slackey';
+    font-size: 100px;
+    padding: 20px;
+    margin: 100px 0px 50px 0px;
+    text-align: center;
+    color: #000000;
+    letter-spacing: 5px;
+}
+
+.animations video {
+    max-width: 500px;
+    width: 100%;
+    box-shadow: 5px 5px 10px #333333;
+    height: auto;
+}
+
+.animations ul {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 100px 0px 250px 0px;
+    gap: 50px;
+}
+
+.character{
+    margin: 50px auto;
+    width: 1550px;
+    columns: 4;
+    column-gap: 20px;
+}
+
+.character .box{
+    width: 100%;
+    margin-bottom: 20px;
+    break-inside: avoid;
+}
+
+.character .box img {
     max-width: 100%;
     border-radius: 20px;
 }
