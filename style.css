@@ -205,11 +205,21 @@ ul {
 
 /* Graphic Design Styles */
 
-.events h2 {
-    font-family: 'Yusei Magic';
-    font-size: 80px;
+#event {
+    font-family: 'Slackey';
+    font-size: 100px;
     padding: 20px;
-    margin: 150px 0px 200px 0px;
+    margin: 100px 0px 200px 0px;
+    text-align: center;
+    color: #000000;
+    letter-spacing: 5px;
+}
+
+#poster {
+    font-family: 'Slackey';
+    font-size: 100px;
+    padding: 20px;
+    margin: 100px 0px 50px 0px;
     text-align: center;
     color: #000000;
     letter-spacing: 5px;
@@ -238,17 +248,25 @@ ul {
     filter: drop-shadow(#777777 5px 5px 10px);
 }
 
-.posters img, .illustrations img {
-    height: 500px;
-    object-fit: cover;
+
+.posters{
+    margin: 20px auto;
+    width: 1500px;
+    columns: 3;
+    column-gap: 20px;
+    rows: 2;
 }
 
-.posters ul, .illustrations ul {
-    display: grid;
-    gap: 20px;
-    grid-template-columns: repeat(3, auto);
+.posters .box{
+    width: 100%;
+    margin-bottom: 20px;
+    break-inside: avoid;
 }
 
+.posters .box img {
+    max-width: 100%;
+    border-radius: 20px;
+}
 
 /* Footer Styles */
 
