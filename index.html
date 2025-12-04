@@ -25,88 +25,108 @@
         </ul>
     </nav>
 
-    <main id="home">
-        <div class="about">
-            <h2>About the Artist</h2>
+    <main>
+        <div id="home">
+            <div class="about">
+                <h2>About the Artist</h2>
 
-            <h3>Hello!</h3>
-            <p>My name is Diana and I am a Minnesota-based artist and designer. My strengths consists of graphic design, 3D modeling, and illustration. As a artist, I strive to create meaningful and innovative projects that invoke a strong sense of connection and emotion.</p><br>
-        </div>
+                <h3>Hello!</h3>
+                <p id="intro">My name is Diana and I am a Minnesota-based artist and designer. My strengths consists of graphic design, 3D modeling, and illustration. As a artist, I strive to create meaningful and innovative projects that invoke a strong sense of connection and emotion.</p><br>
+            </div>
 
-        <div class="portrait">
-            <img src="home img\Portrait.JPG" alt="portait of myself">
-        </div>
+            <div class="portrait">
+                <img src="home img\Portrait.JPG" alt="portait of myself">
+            </div>
 
-        <div class="school">
-            <h3>Education</h3>
-            <ul>
-                <li>Arizona State University</li>
-                <li>BFA Art Studies</li>
-                <li>2023-Present</li>
-            </ul>
-        </div>
+            <div class="school">
+                <h3>Education</h3>
+                <table>
+                    <tr>
+                        <th>School</th>
+                        <th>Year</th>
+                        <th>Degree</th>
+                    </tr>
 
-        <div class="socials">
-            <h3>Socials</h3>
-                <ul>
-                    <li><a href="malito:dianatle527@gmail.com">dianatle527@gmail.com</a></li>
-                    <li><a href="https://www.linkedin.com/in/diana-le-273a80341/">linkedin.com/in/le-diana</a></li>
-                    <li><a href="https://github.com/dianatle527">github.com/dianatle527</a></li>
-                </ul>
+                    <tr>
+                        <td>Arizona State University</td>
+                        <td>2023-2026</td>
+                        <td>Bachelor of Arts</td>
+                    </tr>
+
+                    <tr>
+                        <td>University of Minnesota</td>
+                        <td>2022-2023</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>Champlin Park High School</td>
+                        <td>2018-2022</td>
+                        <td>High School Diploma</td>
+                    </tr>
+                    </table>
+            </div>
+
+            <div class="socials">
+                <h3>Socials</h3>
+                    <ul>
+                        <li><a href="malito:dianatle527@gmail.com">dianatle527@gmail.com</a></li>
+                        <li><a href="https://www.linkedin.com/in/diana-le-273a80341/">linkedin.com/in/le-diana</a></li>
+                        <li><a href="https://github.com/dianatle527">github.com/dianatle527</a></li>
+                    </ul>
+            </div> 
+
+            <div class="skills">
+                <h3>Skills</h3>
+                    <ul>
+                        <li>Graphic Design</li>
+                        <li>3D Modeling</li>
+                        <li>Illustration</li>
+                        <li>Animation</li>
+                        <li>Storyboarding</li>
+                        <li>Web Design</li>
+                    </ul>
+            </div>
+
+            <div class="software">
+                <h3>Software</h3>
+                    <ul>
+                        <li><img src="home img\Adobe_Photoshop_CC_icon.svg.png" alt="photoshop logo"></li>
+                        <li><img src="home img\Adobe_Illustrator_CC_icon.svg.png" alt="illustrator logo"></li>
+                        <li><img src="home img\Adobe_InDesign_CC_icon.svg.png" alt="indesign logo"></li>
+                        <li><img src="home img\Adobe_Animate_CC_icon_(2020).svg.png" alt="animate logo" ></li>
+                        <li><img src="home img\Blender_logo_no_text.svg.png" alt="blender logo"></li>
+                        <li><img src="home img\autodesk-maya-logo-png_seeklogo-482401.png" alt="maya logo"></li>
+                    </ul>
+            </div>
+
         </div> 
 
-        
-        <div class="skills">
-            <h3>Skills</h3>
-                <ul>
-                    <li>Graphic Design</li>
-                    <li>3D Modeling</li>
-                    <li>Illustration</li>
-                    <li>Animation</li>
-                    <li>Storyboarding</li>
-                    <li>Web Design</li>
-                </ul>
-        </div>
+            <div class="feedback">
+                <h3>Send a Message</h3>
+                <form action="https://dianatle527.github.io/portfolio.github.io/" method="POST">
 
-        <div class="software">
-            <h3>Software</h3>
-                <ul>
-                    <li><img src="home img\Adobe_Photoshop_CC_icon.svg.png" alt="photoshop logo"></li>
-                    <li><img src="home img\Adobe_Illustrator_CC_icon.svg.png" alt="illustrator logo"></li>
-                    <li><img src="home img\Adobe_InDesign_CC_icon.svg.png" alt="indesign logo"></li>
-                    <li><img src="home img\Adobe_Animate_CC_icon_(2020).svg.png" alt="animate logo" ></li>
-                    <li><img src="home img\Blender_logo_no_text.svg.png" alt="blender logo"></li>
-                    <li><img src="home img\autodesk-maya-logo-png_seeklogo-482401.png" alt="maya logo"></li>
-                </ul>
-        </div>
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" required>
 
-        <div class="feedback">
-            <h3>Send a Message</h3>
-            <form action="https://dianatle527.github.io/portfolio.github.io/" method="POST">
+                    <label for="name">Profession:</label>
+                    <input type="text" id="profession" required>
 
-                <label for="name">Name:</label>
-                <input type="text" id="name" required>
+                    <label for="name">Age:</label>
+                    <input type="number" id="age" min="1" required>
 
-                <label for="name">Profession:</label>
-                <input type="text" id="profession" required>
+                    <label for="name">E-mail:</label>
+                    <input type="email" id="email" required>
 
-                <label for="name">Age:</label>
-                <input type="number" id="age" min="1" required>
+                    <label for="comments">Comments:</label>
+                    <textarea id="comments" name="comments" rows="5"></textarea>
 
-                <label for="name">E-mail:</label>
-                <input type="email" id="email" required>
-
-                <label for="comments">Comments:</label>
-                <textarea id="comments" name="comments" rows="5"></textarea>
-
-                <input type="submit" value="submit">
-            </form>
-        </div>
+                    <input type="submit" value="Submit">
+                </form>
+            </div>
 
     </main>
 
     <footer>
-        <a href="mailto:dianatle527@gmail.com">dianatle527@gmail.com</a>  
         Copyright&copy; 2025 Diana Le's Portfolio<br>
     </footer>
     

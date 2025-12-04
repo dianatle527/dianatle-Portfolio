@@ -68,6 +68,16 @@ nav a:link, nav a:visited {
     text-decoration: none;
 }
 
+p {
+    text-align: center;
+    font-family: "Cal Sans";
+    font-size: 25px;
+    color: #444444;
+    margin: 75px 200px 0px 200px;
+    letter-spacing: 3px;
+    line-height: 1.5;
+}
+
 /* Home Page Styles */
 
 #home {
@@ -76,11 +86,6 @@ nav a:link, nav a:visited {
     align-items: start;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: repeat(4, auto);
-    grid-template-areas: 
-    "about about"
-    "about portrait"
-    "school skills"
-    "socials software";
     padding: 50px 150px 0 0;
 }
 
@@ -106,7 +111,7 @@ nav a:link, nav a:visited {
     margin-bottom: 15px;
 }
 
-.about p {
+#intro {
     padding: 25px 35px;
     font-family: 'Cal Sans';
     color: #4b4b4b;
@@ -114,6 +119,7 @@ nav a:link, nav a:visited {
     background-color: #e6e6e6;
     border-radius: 50px;
     box-shadow: #b6b6b6 5px 5px 10px;
+    margin: 0;
 }
 
 .portrait img {
@@ -142,14 +148,25 @@ ul {
     text-shadow: #818181 3px 3px 5px;
 }
 
-.school ul {
-    padding: 25px 20px 25px 50px;
-    font-family: 'Cal Sans';
-    color: #dbdbdb;
-    background-color: #444444;
-    border-radius: 50px;
-    box-shadow: #b6b6b6 5px 5px 10px;
-    margin-right: 200px;
+table {
+    background-color: #c2c2c2;
+    padding: 30px;
+    border-radius: 60px;
+    font-family: "Cal Sans";
+    font-size: 20px;
+    border-collapse: separate;
+    border-spacing: 10px;
+    box-shadow: #979797 5px 5px 10px;
+    margin-right: 50px;
+}
+
+th {
+    font-size: 25px;
+    color: #313131;
+}
+
+td {
+    color: #4d4d4d;
 }
 
 .skills {
@@ -226,6 +243,58 @@ ul {
     filter: drop-shadow(3px 3px 5px #505050);
 }
 
+.feedback h3 {
+    text-align: center;
+    font-size: 60px;
+    font-family:'Lobster';
+    text-shadow: #818181 3px 3px 5px;
+}
+
+form {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    margin: 25px 500px 75px 500px;
+    background: #c7d4df;
+    padding: 30px 60px 50px 60px;
+    border-radius: 60px;
+    box-shadow: #b6b6b6 5px 5px 10px;
+}
+
+label {
+    text-align: start;
+    font-size: 20px;
+    font-family: 'Cal Sans';
+    padding: 10px 0;
+    color: #494949;
+}
+
+input, textarea{
+    border: none;
+    border-radius: 20px;
+}
+
+textarea {
+    box-sizing: border-box;
+    padding: 12px 15px 12px 15px;
+}
+
+input {
+    padding: 10px
+}
+
+input[type="submit"] {
+    margin: 25px 100px auto 100px;
+    padding: 15px;
+    background-color: #0559a7;
+    font-family: 'Cal Sans';
+    font-size: 30px;
+    letter-spacing: 2.5px;
+    color: #ffffff;
+    box-shadow: #727272 4px 4px 7px;
+    border-radius: 40px;
+}
+
 /* Graphic Design Styles */
 
 #event {
@@ -243,7 +312,7 @@ ul {
     font-family: 'Lobster';
     font-size: 120px;
     padding: 20px;
-    margin: 100px 0px 50px 0px;
+    margin: 50px 0px 50px 0px;
     text-align: center;
     color: #000000;
     letter-spacing: 5px;
